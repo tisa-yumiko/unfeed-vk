@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Unfeed VK",
+    "version": "1.0",
+    "author": "Tisa Yumiko",
+    "description": "Расширение скрывает кнопку новостей, а также при первичном открытии вконтакта перенаправляет с ленты новостей на страницу пользователя. Подходит для тех, кому надоела лента новостей, и кому хочется, чтобы её будто не существовало.",
+    "icons": { "48": "icons/unfeed-48.png" },
+
+
+    "permissions": ["webRequest", "webRequestBlocking"],
+    "host_permissions": ["*://vk.com/*"],
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.vk.com/*"],
+            "css": ["css/unfeed.css"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["*://*.vk.com/*"],
+            "js": ["js/unfeed.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "tisa.yumiko@mail.ru"
+        }
+    }
+}
