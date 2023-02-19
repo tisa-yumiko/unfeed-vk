@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Unfeed VK",
     "version": "1.0",
     "author": "Tisa Yumiko",
@@ -8,8 +8,7 @@
     "icons": { "48": "icons/unfeed-48.png" },
 
 
-    "permissions": ["webRequest", "webRequestBlocking"],
-    "host_permissions": ["*://vk.com/*"],
+    "permissions": ["webRequest", "webRequestBlocking", "*://vk.com/*"],
 
     "content_scripts": [
         {
