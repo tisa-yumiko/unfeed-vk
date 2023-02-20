@@ -15,7 +15,7 @@
     },
 
 
-    "permissions": ["webRequest", "webRequestBlocking", "*://vk.com/*"],
+    "permissions": ["webRequest", "webRequestBlocking", "*://vk.com/*", "*://*.vk.com/*"],
 
     "content_scripts": [
         {
