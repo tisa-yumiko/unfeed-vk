@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Unfeed VK",
-    "version": "23.2",
+    "version": "23.3",
     "author": "Tisa Yumiko",
     "homepage_url": "https://github.com/tisa-yumiko/unfeed-vk",
     "description": "Simple extension that hides VK feed, and redirect from feed to personal page when VK is firstly open. Useful for people who are annoyed by the feed.",
