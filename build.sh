@@ -1,2 +1,3 @@
 #/bin/bash
-zip -r -FS ../unfeed-vk.zip * --exclude '*.git*' '*.sh' '*.md'
+[[ -d zip ]] || mkdir zip
+zip -r -FS ./zip/unfeed-vk.zip * --exclude '*.git*' '*.sh' '*.md'
