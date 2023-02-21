@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "name": "Pack extension",
+            "type": "command",
+            "program": "$PROJECT_DIR$/build.sh",
+        }
+    ]
+}
